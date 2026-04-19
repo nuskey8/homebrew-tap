@@ -5,20 +5,20 @@
 class Kill9Game < Formula
   desc ""
   homepage ""
-  version "0.2.0"
+  version "0.2.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nuskey8/kill9-game/releases/download/v0.2.0/kill9-game_Darwin_x86_64.tar.gz"
-      sha256 "91739129a72822b23200accd42678dbd0c680dfdc9028075a5ac55dae2ad83a2"
+      url "https://github.com/nuskey8/kill9-game/releases/download/v0.2.1/kill9-game_Darwin_x86_64.tar.gz"
+      sha256 "120d174890f045acd5e2b3571cc3919e1e3dc38d48291684e86f4187ba1c1afd"
 
       define_method(:install) do
         bin.install "kill9-game"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nuskey8/kill9-game/releases/download/v0.2.0/kill9-game_Darwin_arm64.tar.gz"
-      sha256 "7fd77cdeeed282c3aedb9ea1782306e2b8df882014346d426477d53814dbc8d3"
+      url "https://github.com/nuskey8/kill9-game/releases/download/v0.2.1/kill9-game_Darwin_arm64.tar.gz"
+      sha256 "ccc1f9166e1e8e4f696e65465da8445ee51e7c68e85bce367de817acd9c2754f"
 
       define_method(:install) do
         bin.install "kill9-game"
@@ -28,15 +28,15 @@ class Kill9Game < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nuskey8/kill9-game/releases/download/v0.2.0/kill9-game_Linux_x86_64.tar.gz"
-      sha256 "9c7e27d8fb3efe6e71fa023483fe84328598615ddefdacc8692ac81089d4df4e"
+      url "https://github.com/nuskey8/kill9-game/releases/download/v0.2.1/kill9-game_Linux_x86_64.tar.gz"
+      sha256 "a2a7caff48d464ee369c8fe63922f2a2d88722b8f3b6cbe0136f8443f5235295"
       define_method(:install) do
         bin.install "kill9-game"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nuskey8/kill9-game/releases/download/v0.2.0/kill9-game_Linux_arm64.tar.gz"
-      sha256 "60b830f3163392a9cdc616ca4b9154d7f200775d97cac8b95a537752db05f394"
+      url "https://github.com/nuskey8/kill9-game/releases/download/v0.2.1/kill9-game_Linux_arm64.tar.gz"
+      sha256 "99c8439628a5e4d447a68cc40286427a74491fd4dcbae8cb4c12bb0f4205c300"
       define_method(:install) do
         bin.install "kill9-game"
       end
